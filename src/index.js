@@ -13,6 +13,7 @@ const refs = {
 
 
 refs.inputField.addEventListener('input', debounce(onSearchCountry, 300))
+
 function onSearchCountry(el){
   el.preventDefault();
   const countryInput = el.target.value.trim();

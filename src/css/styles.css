@@ -19,12 +19,14 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+  border-radius: 4px;
 }
 
 .country-list{
 font-size: 20px;
 list-style: none;
 text-decoration: none;
+margin-bottom: 40px;
 }
 
 .country-flag{
@@ -36,4 +38,6 @@ text-decoration: none;
 p{
   margin-top: 0px;
   margin-bottom: 3px;
+  font-size: 25px;
+  font-style: bold;
 }
