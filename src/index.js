@@ -26,6 +26,7 @@ function onSearchCountry(el){
     .then(data => {
       console.log(data)
       if (data.length > 10) {
+        resetList()
         Notiflix.Notify.info(
           'Too many matches found. Please enter a more specific name.'
         );
