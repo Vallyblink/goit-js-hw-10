@@ -24,7 +24,6 @@ function onSearchCountry(el){
 
   fetchCountries(countryInput)
     .then(data => {
-      console.log(data)
       if (data.length > 10) {
         resetList()
         Notiflix.Notify.info(
@@ -41,6 +40,7 @@ function onSearchCountry(el){
       }
     })
     .catch(error => {
+      resetList()
       Notiflix.Notify.failure('Oops, there is no country with that name');
       return;
     });
